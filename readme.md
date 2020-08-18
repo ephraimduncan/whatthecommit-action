@@ -32,7 +32,7 @@ This is a GitHub Action that changes the last commit and replaces it with a comm
            uses: actions/setup-node@v1
            with:
              node-version: '12.x'
-         - name: Run Bot
+         - name: Change Commit
            uses: dephraiim/whatthecommit-action@v1
    ```
 
