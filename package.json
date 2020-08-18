@@ -6,6 +6,9 @@
     "name": "Ephraim Atta-Duncan",
     "email": "ephraimduncan68@gmail.com"
   },
+  "scripts": {
+    "build": "ncc build index.js -o dist --source-map"
+  },
   "main": "index.js",
   "keywords": [
     "bot",
@@ -14,7 +17,6 @@
   "repository": "github:dephraiim/twitter-bot-action",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.4",
     "axios": "^0.19.2"
   },
   "devDependencies": {
