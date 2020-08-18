@@ -1,21 +1,11 @@
-name: Twitter Bot Action
+name: What The Commit
 author: Ephraim Atta-Duncan
-description: GitHub Action for running Twitter Bot.
-
-inputs:
-  package_root:
-    description: Directory where NPM/Yarn commands should be run
-    required: false
-    default: '.'
-  file_name:
-    description: Filename of bot file.
-    required: false
-    default: 'index.js'
+description: Changes the last commit to a remotely fetched one from whatthecommit.com
 
 runs:
   using: node12
-  main: index.js
+  main: dist/index.js
 
 branding:
-  icon: activity
-  color: blue
+  icon: git-commit
+  color: black
