@@ -2,7 +2,7 @@
 
 **GitHub Action for committing messages from whatthecommit.com**
 
-This is a GitHub Action that changes the last commit and replaces it with a commit message from https://whatthecommit.com
+This is a GitHub Action that changes the last commit and replaces it with a commit message from whatthecommit.com
 
 > _Risky for repos that have forks ❗_
 
@@ -38,12 +38,12 @@ This is a GitHub Action that changes the last commit and replaces it with a comm
 
 ### Commiting
 
-Using the workflow above, GitHub will modify the last commit with a commit message from https://whatthecommit.com
+Using the workflow above, GitHub will modify the last commit with a commit message from whatthecommit.com
 
 ### Development
 
 Contributions and Suggestions are always welcome!
 
-### LICENSE
+### License
 
 [MIT](./license)
