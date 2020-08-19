@@ -20,3 +20,6 @@ jobs:
         with:
           node-version: '12.x'
       - uses: ./
+        env:
+          COMMIT_EMAIL: ${{ secrets.COMMIT_EMAIL }}
+          COMMIT_USERNAME: ${{ secrets.COMMIT_USERNAME }}

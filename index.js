@@ -6,6 +6,9 @@ const rootDir = '.';
 
 async function __() {
   const _ = await axios.get('http://whatthecommit.com/index.txt');
+  run(`git config --global user.email ${process.env.COMMIT_EMAIL}`, rootDir);
+  run(`git config --global user.name ${process.env.COMMIT_USERNAME}`, rootDir);
+
   log('Creating New Commit....');
   run(`git commit --amend -m ${JSON.stringify(_.data).replace(/(\r\n|\n|\r)/gm, '')}`, rootDir);
 
