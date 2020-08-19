@@ -7,6 +7,7 @@ async function __() {
   await git.add('./*');
   await git.addConfig('user.name', process.env.COMMIT_USERNAME);
   await git.addConfig('user.email', process.env.COMMIT_EMAIl);
+  await git.pull();
   await git.commit(JSON.stringify(_.data.replace(/(\r\n|\n|\r)/gm, '')), ['--amend']);
   await git.push();
 }
