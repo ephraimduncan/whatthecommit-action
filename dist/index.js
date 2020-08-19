@@ -8364,22 +8364,23 @@ exports.parseCheckIgnore = (text) => {
 /***/ 932:
 /***/ (function(__unusedmodule, __unusedexports, __webpack_require__) {
 
-const axios = __webpack_require__(545);
-const simpleGit = __webpack_require__(477);
-const git = simpleGit();
+const _ = __webpack_require__(545);
+const __ = __webpack_require__(477);
+const ___ = __();
 
-async function __() {
-  const _ = await axios.get('http://whatthecommit.com/index.txt');
-  await git.add('./*');
-  await git.addConfig('user.name', process.env.GITHUB_ACTOR);
-  await git.addConfig('user.email', process.env.COMMIT_EMAIl);
-  await git.commit(_.data.replace(/(\r\n|\n|\r)/gm, ''), ['--amend']);
-  await git.pull(['--allow-unrelated-histories']);
-  await git.push();
+async function ____() {
+  const _____ = await _.get('http://whatthecommit.com/index.txt');
+
+  await ___.add('./*');
+  await ___.addConfig('user.name', process.env.GITHUB_ACTOR);
+  await ___.addConfig('user.email', process.env.COMMIT_EMAIl);
+  await ___.commit(_____.data.replace(/(\r\n|\n|\r)/gm, ''), ['--amend']);
+  await ___.pull(['--allow-unrelated-histories']);
+  await ___.push();
 }
 
 try {
-  __();
+  ____();
 } catch (error) {
   throw new Error(error);
 }

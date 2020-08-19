@@ -22,4 +22,3 @@ jobs:
       - uses: ./
         env:
           COMMIT_EMAIL: ${{ secrets.COMMIT_EMAIL }}
-          COMMIT_USERNAME: ${{ secrets.COMMIT_USERNAME }}
