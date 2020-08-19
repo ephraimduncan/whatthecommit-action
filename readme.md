@@ -1,6 +1,6 @@
 # What the Commit
 
-**GitHub Action for committing messages from whatthecommit.com**
+**GitHub Action for committing messages from https://whatthecommit.com**
 
 This is a GitHub Action that changes the last commit and replaces it with a commit message from whatthecommit.com
 
@@ -38,7 +38,7 @@ This is a GitHub Action that changes the last commit and replaces it with a comm
 
 ### Commiting
 
-Using the workflow above, GitHub will modify the last commit with a commit message from whatthecommit.com
+Using the workflow above, GitHub will modify the last commit with a commit message from https://whatthecommit.com
 
 ### Development
 
