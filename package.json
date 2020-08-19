@@ -1,0 +1,26 @@
+{
+  "name": "whatthecommit-action",
+  "version": "0.1.0",
+  "description": "Github Action to change last commit message",
+  "author": {
+    "name": "Ephraim Atta-Duncan",
+    "email": "ephraimduncan68@gmail.com"
+  },
+  "scripts": {
+    "build": "ncc build index.js -o dist --source-map"
+  },
+  "main": "index.js",
+  "keywords": [
+    "bot",
+    "twitter"
+  ],
+  "repository": "github:dephraiim/whatthecommit-action",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "simple-git": "^2.18.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.23.0"
+  }
+}

@@ -1,0 +1,11 @@
+name: What The Commit
+author: Ephraim Atta-Duncan
+description: Changes the last commit to a remotely fetched one from whatthecommit.com
+
+runs:
+  using: node12
+  main: dist/index.js
+
+branding:
+  icon: git-commit
+  color: black
