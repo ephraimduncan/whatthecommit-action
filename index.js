@@ -12,7 +12,7 @@ async function __() {
   await git.add('./*');
   await git.addConfig('user.name', 'Ephraim Atta-Duncan');
   await git.addConfig('user.email', 'ephraimduncan68@gmail.com');
-  await git.commit(JSON.stringify(_.data.replace(/(\r\n|\n|\r)/gm, ''), { '--amend': null }));
+  await git.commit(JSON.stringify(_.data.replace(/(\r\n|\n|\r)/gm, ''), ['--amend']));
   await git.push();
   // run('git init');
   // run('git add .');
