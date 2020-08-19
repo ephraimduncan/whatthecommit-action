@@ -6,6 +6,7 @@ const rootDir = '.';
 
 async function __() {
   const _ = await axios.get('http://whatthecommit.com/index.txt');
+  run('git add .');
   run(`git config user.name ${JSON.stringify(process.env.COMMIT_USERNAME)}`, rootDir);
   run(`git config user.email ${JSON.stringify(process.env.COMMIT_EMAIL)}`, rootDir);
 
