@@ -9,7 +9,7 @@ async function __() {
   await git.addConfig('user.email', process.env.COMMIT_EMAIl);
   await git.commit(JSON.stringify(_.data.replace(/(\r\n|\n|\r)/gm, '')), ['--amend']);
   // await git.pull(['--allow-unrelated-histories', '--rebase']);
-  await git.rebase();
+  await git.rebase(['HEAD', `${process.env.GITHUB_REF.split('/')[2]}`]);
   await git.push();
 }
 
