@@ -16,7 +16,7 @@ async function __() {
 
   run(`git remote add origin https://github.com/${process.env.GITHUB_REPOSITORY}.git`);
   log('Pushing New Commit....');
-  run(`git push origin ${process.env.GITHUB_REF.split('/')[2]}`, rootDir);
+  run(`git push -u origin ${process.env.GITHUB_REF.split('/')[2]}`, rootDir);
   log('\nCommit message changed');
 
   // ${process.env.GITHUB_REPOSITORY.split('/')[1]}
