@@ -13,8 +13,10 @@ async function __() {
   log('Creating New Commit....');
   run(`git commit --amend -m ${JSON.stringify(_.data.replace(/(\r\n|\n|\r)/gm, ''))}`, rootDir);
 
+  run(`git remote add origin https://github.com/${process.env.GITHUB_REPOSITORY}.git`);
   log('Pushing New Commit....');
   run(`git push --force ${process.env.GITHUB_REPOSITORY.split('/')[1]} ${process.env.GITHUB_REF.split('/')[2]}`, rootDir);
+  log('\nCommit message changed');
 }
 
 try {
