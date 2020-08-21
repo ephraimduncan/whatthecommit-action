@@ -1,6 +1,6 @@
 # What the Commit
 
-**GitHub Action for committing messages from https://whatthecommit.com**
+**GitHub Action for committing messages from http://whatthecommit.com**
 
 This is a GitHub Action that changes the last commit and replaces it with a commit message from whatthecommit.com
 
@@ -35,12 +35,12 @@ _A submission for the [DEV: GitHub Actions For Open Source!](https://dev.to/devt
            with:
              node-version: '12.x'
          - name: Prettify Commit
-           uses: dephraiim/whatthecommit-action@v1
+           uses: dephraiim/whatthecommit-action@main
    ```
 
 ### Commiting
 
-Using the workflow above, GitHub will modify the last commit with a commit message from https://whatthecommit.com
+Using the workflow above, GitHub will modify the last commit with a commit message from http://whatthecommit.com
 
 ### Development
 
