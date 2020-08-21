@@ -4,6 +4,8 @@
 
 This is a GitHub Action that changes the last commit and replaces it with a commit message from whatthecommit.com
 
+_A submission for the [DEV: GitHub Actions For Open Source!](https://dev.to/devteam/announcing-the-github-actions-hackathon-on-dev-3ljn) hackathon_
+
 > _Risky for repos that have forks ❗_
 
 ### Setup
