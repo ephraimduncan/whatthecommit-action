@@ -18,7 +18,7 @@ async function ____() {
 
   let _________ = ________ ? ________ : process.env.GITHUB_ACTOR;
   await ___.addConfig('user.name', _________);
-  await ___.addConfig('user.email', _______.data[0].payload.commits[0].author.email);
+  await ___.addConfig('user.email', _______);
   await ___.commit(_____.data.replace(/(\r\n|\n|\r)/gm, ''), ['--amend']);
   await ___.pull(['--allow-unrelated-histories']);
   await ___.push();
